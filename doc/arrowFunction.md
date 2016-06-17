@@ -20,6 +20,8 @@
   })
   // 输出 [2, 4]
   
+  // this 的特别说明
+  // 在箭头函数内 没有this 箭头函数的this 就是定义时候的最外层的this；
   var team = {
     name: 'baidu',
     teamNumbers: ['li', 'zhang', 'zhao'],
@@ -30,6 +32,20 @@
     }
   }
   // 输出baiduli  baiduzhang   baiduzhao
+  
+  // 举一个极端点例子
+  function testThis (){
+    return () => {
+      return () => {
+        console.log( this.id);
+      }
+    }
+  }
+  
+
+
+
+  
 ```
 
 
