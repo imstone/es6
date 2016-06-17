@@ -11,7 +11,25 @@
   var list3 = list.map((v, i) => v + i);
   // 输出结果是 [1, 3, 5, 7]
 
-
+  // 函数体 大括号{}
+  // 当代码逻辑有多行时候需要使用大括号吧代码包裹起来
+  var array = [];
+  list.forEach((item) => {
+    if (item % 2 ===0 )
+      array.push(item);
+  })
+  // 输出 [2, 4]
+  
+  var team = {
+    name: 'baidu',
+    teamNumbers: ['li', 'zhang', 'zhao'],
+    showAll() {
+      this.teamNumbers.forEach(item => {
+        console.log(this.name + item)
+      })
+    }
+  }
+  // 输出baiduli  baiduzhang   baiduzhao
 ```
 
 
