@@ -6,7 +6,14 @@
 ```javascript
   // 表达式
   var list = [1, 2, 3, 4];
+  
   var list2 = list.map(v => v+1);
+  
+  // 上面的代码就相当于
+  list.map(function (v){
+    return v + 1;
+  })
+  
   // 输出后是 [2, 3, 4, 5]
   var list3 = list.map((v, i) => v + i);
   // 输出结果是 [1, 3, 5, 7]
