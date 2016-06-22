@@ -19,3 +19,5 @@ var arr1 = [].slice.call(arrayLike); // ['a', 'b', 'c']
 // ES6的写法
 let arr2 = Array.from(arrayLike); // ['a', 'b', 'c']
 ```
+
+##数组过滤填充查找元素
